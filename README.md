@@ -24,6 +24,5 @@ Ejecucion
         
         usuario$ rake
 
-===========================
-Jessica A. Ramos Villarreal
-ETSII-ULL
+=======================================
+Jessica A. Ramos Villarreal - ETSII-ULL
