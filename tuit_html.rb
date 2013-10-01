@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
+require 'twitter'
+require './configure.rb'
 require 'rack'
 require 'pry-debugger'
+require 'thin'
+require 'erb'
 
 class HelloWorld
 
