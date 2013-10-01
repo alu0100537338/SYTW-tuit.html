@@ -35,6 +35,8 @@ class Twitts
 		
 		#Si el nombre existe buscamos sus últimos Tweets
 		#if @nombre == req["firstname"]
+			@nombre = req["usuario"]
+			@numero = req ["numero"] 
 			puts "#{@tuits}"
 			ultimos = Twitter.user_timeline(@nombre,{:count=>@numero.to_i})
 			@tuits =(@tuits && @tuits != '') ? ultimos.map{ |i| i.text} : ''				
