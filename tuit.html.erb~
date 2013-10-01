@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+				
+		<title>Rack::Response</title>
+	</head>
+	<body>
+		
+	 	<h1>Aplicación que muestra los últimos tuits</h1>
+	 	
+		 <form action="/" method="post">
+		   	<p><b>Usuario: </b><input type="text" name="firstname"  value="" autofocus></p>
+		   	<p><b>Numero de tuits que se desea ver: </b><input type="text" name="n" value="1"></p>
+		   	<input  type="submit" value="Aceptar" >
+		 </form>
+
+		
+		<% if @nombre != '' %>
+			<% if %>
+				<p>Ultimos <%= @numero %> tuits :</p>
+				<ol>
+					<% @tuits.each do |i| %> 
+						<li id="col"><%= i %><br></li>
+					<% end %>
+				</ol>
+			<%end%>
+		<%end%>
+
+	</body>
+</html>
